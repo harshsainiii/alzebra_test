@@ -121,8 +121,4 @@ else:
                 st.markdown(f"**Your Answer:** <span class='error-msg'>{res['user_choice'] if res['user_choice'] else 'Skipped'}</span>", unsafe_allow_html=True)
                 st.markdown(f"**Correct Answer:** <span class='success-msg'>{res['correct_answer']}</span>", unsafe_allow_html=True)
 
-    # Retry Button
-    if st.button("Retake Test"):
-        st.session_state.submitted = False
-        st.session_state.user_answers = {}
-        st.rerun()
+   
